@@ -1,2 +1,3 @@
-# technical-documentation-page
-responsive web design technical documentation page coberying flex box.
+# technical documentation page
+
+responsive web design technical documentation page covering flexibox.
