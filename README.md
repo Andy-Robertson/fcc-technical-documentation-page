@@ -1,3 +1,3 @@
-# technical documentation page
+# technical-documentation-page
 
-responsive web design technical documentation page covering flexibox.
+A responsive web design technical documentation page explaining CSS flexbox written in HTML and CSS.
