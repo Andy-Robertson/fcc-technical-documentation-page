@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="html">
 
 <head>
+<<<<<<< HEAD
+  <title>Technical Documentation Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS import -->
+=======
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
@@ -10,14 +16,25 @@
   
   <!-- CSS IMPORT -->
 
+>>>>>>> 04381f4e35907f4ad2c9a98d1bceb7e2d8e1a012
   <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+</head>
 
+<<<<<<< HEAD
+<body class="body">
+  <!-- Navigation bar -->
+  <nav id="navbar" class="navbar">
+    <header id="nav-bar-header" class="nav-bar-header">Flexibox Documentation</header>
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle" class="toggle">
+=======
   <!-- NAVIGATION BAR -->
 
   <nav id="navbar">
     <header id="nav_bar_header">Flexbox Documentation</header>
     <label for="toggle">&#9776</label>
     <input type="checkbox" id="toggle">
+>>>>>>> 04381f4e35907f4ad2c9a98d1bceb7e2d8e1a012
     <div class="menu">
       <a class="nav-link" href="#introduction">Introduction</a>
       <a class="nav-link" href="#display">Display</a>
@@ -34,18 +51,12 @@
       <a class="nav-link" href="#align_self">Align Self</a>
     </div>
   </nav>
-</head>
-
-<body>
   <main id="main-doc">
-
-    <!-- INTRODUCTION SECTION -->
-
-    <section class="main-section" id="introduction">
-      <header class="section-header" id="introduction_header">Introduction</header>
+    <!-- Introduction section -->
+    <section class="main-section introduction" id="introduction">
+      <header id="introduction-header" class="section-header">Introduction</header>
       <p>The flexibox box layout was first introduced to CSS3 having been inspired by the flexibility of JavaScript
         frameworks. There are several key features associated with flexibox, these include:</p>
-
       <ul>
         <li>Fit to any size screen;</li>
         <li>Avoids unnecessary monopolization of space;</li>
@@ -54,170 +65,146 @@
         <li>Directional flow can be specified at the style level.</li>
       </ul>
     </section>
-
-    <!-- DISPLAY SECTION -->
-
+    <!-- Display section -->
     <section class="main-section" id="display">
-      <header class="section-header" id="display_header">Display </header>
+      <header class="section-header" id="display_header">Display</header>
       <p>Display specifies the type of rendering box used for an item.</p>
-      <code>display: flex;</code>
+      <code class="code">display: flex;</code>
       <p>Makes the flex <strong>items</strong> display inline.</p>
-      <code>display: flex-inline;</code>
+      <code class="code">display: flex-inline;</code>
       <p>Makes the flex <strong>container</strong> display inline.</p>
     </section>
-
-    <!-- FLEX DIRECTION SECTION -->
-
+    <!-- Flex directon section -->
     <section class="main-section" id="flex_direction">
       <header class="section-header" id="flex_direction_header">Flex Direction</header>
       <p>Specifies how flex items are placed in the flex container.</p>
-      <code>flex-direction: row;</code>
+      <code class="code">flex-direction: row;</code>
       <p>Text is arranged in a horizontal line from left to right.</p>
-      <code>flex-direction: row-reverse;</code>
+      <code class="code">flex-direction: row-reverse;</code>
       <p>Text is arranged in a horizontal line from right to left.</p>
-      <code>flex-direction: column;</code>
+      <code class="code">flex-direction: column;</code>
       <p>Text lines are stacked from top to bottom.</p>
-      <code>flex-direction: column-reverse; </code>
+      <code class="code">flex-direction: column-reverse; </code>
       <p>Text lines are stacked from bottom to top.</p>
     </section>
-
-    <!-- FLEX WRAP SECTION -->
-
+    <!-- Flex wrap section -->
     <section class="main-section" id="flex_wrap">
       <header class="section-header" id="flex_wrap_header">Flex Wrap</header>
       <p>Specifies whether flex items are forced onto a single line or wrapped onto multiple lines.</p>
-      <code>flex-wrap: nowrap;</code>
+      <code class="code">flex-wrap: nowrap;</code>
       <p>Items stay on one line.</p>
-      <code>flex-wrap: wrap;</code>
+      <code class="code">flex-wrap: wrap;</code>
       <p>Items wrap onto other lines.</p>
-      <code>flex-wrap: wrap-reverse;</code>
+      <code class="code">flex-wrap: wrap-reverse;</code>
       <p>Items wrap in the opposite direction defined by flex-direction.</p>
     </section>
-
-    <!-- JUSTIFY CONTENT SECTION -->
-
+    <!-- Justify content section -->
     <section class="main-section" id="justify_content">
       <header class="section-header" id="justify_content_header">Justify Content</header>
       <p>Defines how the browser distributes space between and around flex items along the main axis.</p>
-      <code>justify-content: flex-start;</code>
+      <code class="code">justify-content: flex-start;</code>
       <p>Position items starting from the start.</p>
-      <code>justify-content: flex-end;</code>
+      <code class="code">justify-content: flex-end;</code>
       <p>Position items starting from the end.</p>
-      <code>justify-content: center;</code>
+      <code class="code">justify-content: center;</code>
       <p>Position items around the centre.</p>
-      <code>justify-content: space-between;</code>
+      <code class="code">justify-content: space-between;</code>
       <p>Position items evenly, first item flush at the left and last item flush with the right.</p>
-      <code>justify-content: space-around;</code>
+      <code class="code">justify-content: space-around;</code>
       <p>Position items evenly with a half-sized space on each end.</p>
-      <code>justify-content: space-evenly;</code>
+      <code class="code">justify-content: space-evenly;</code>
       <p>Position items evenly with even space between them.</p>
     </section>
-
-    <!-- ALIGN ITEMS SECTION -->
-
+    <!-- Align items section -->
     <section class="main-section" id="align_items">
       <header class="section-header" id="align_items_header">Align Items</header>
       <p>Defines how the browser distributes space between and around flex items along the cross-axis.</p>
-      <code>align-items: stretch; </code>
+      <code class="code">align-items: stretch; </code>
       <p>Stretch items to fit.</p>
-      <code>align-items: flex-start;</code>
+      <code class="code">align-items: flex-start;</code>
       <p>Align items starting from the start.</p>
-      <code>align-items: flex-end;</code>
+      <code class="code">align-items: flex-end;</code>
       <p>Align items starting from the end.</p>
-      <code>align-items: center;</code>
+      <code class="code">align-items: center;</code>
       <p>Align items in the centre.</p>
-      <code>align-items: baseline;</code>
+      <code class="code">align-items: baseline;</code>
       <p>Align items to baseline.</p>
     </section>
-
-    <!-- ALIGN CONTENT SECTION -->
-
+    <!-- Align content section -->
     <section class="main-section" id="align_content">
       <header class="section-header" id="align_content_header">Align Content</header>
       <p>Aligns a flex container’s lines within the flex container when there is extra space on the cross-axis.</p>
-      <code>align-content: flex-start;</code>
+      <code class="code">align-content: flex-start;</code>
       <p>Pack lines from the cross-axis start.</p>
-      <code>align-content: flex-end;</code>
+      <code class="code">align-content: flex-end;</code>
       <p>Pack lines to the cross-axis end.</p>
-      <code>align-content: center;</code>
+      <code class="code">align-content: center;</code>
       <p>Pack lines around the cross-axis centre.</p>
-      <code>align-content: space-between;</code>
+      <code class="code">align-content: space-between;</code>
       <p>Distribute lines along the cross-axis, the first item is flush with the start, the last is flush with the end.
       </p>
-      <code>align-content: space-around;</code>
+      <code class="code">align-content: space-around;</code>
       <p>Distribute lines evenly along the cross-axis, all items have a half-size space on either end.</p>
-      <code>align-content: stretch;</code>
+      <code class="code">align-content: stretch;</code>
       <p>Stretch lines to occupy the whole cross-axis.</p>
-      <code>align-content: space-evenly;</code>
+      <code class="code">align-content: space-evenly;</code>
       <p>Distribute lines evenly along the cross-axis, Items all have equal space around them.</p>
     </section>
-
-    <!-- ORDER SECTION -->
-
+    <!-- Order section -->
     <section class="main-section" id="order">
       <header class="section-header" id="order_header">Order</header>
       <p>Specifies the order used to lay out flex items in their flex container.</p>
-      <code>order: 0;</code>
+      <code class="code">order: 0;</code>
       <p>Accepts numerical values including negative numbers. Global values accepted including, <i>inherit; initial;</i>
         and <i>unset; (initial value = 0)</i></p>
     </section>
-
-    <!-- FLEX GROW SECTION -->
-
+    <!-- Flex grow section -->
     <section class="main-section" id="flex_grow">
       <header class="section-header" id="flex_grow_header">Flex Grow</header>
       <p>specifies the flex grow factor of a flex item. It specifies what amount of space inside the flex container the
         item should take up.</p>
-      <code>flex-grow: 0;</code>
+      <code class="code">flex-grow: 0;</code>
       <p>Numerical values accepted and global values including: <i>inherit; initial;</i> and <i>unset; (initial value =
           0).</i></p>
     </section>
-
-    <!-- FLEX SHRINK SECTION -->
-
+    <!-- Flex shrink section -->
     <section class="main-section" id="flex_shrink">
       <header class="section-header" id="flex_shrink_header">Flex Shrink</header>
       <p>Specifies the flex grow factor of a flex item. It specifies what amount of space inside the flex container the
         item should take up.</p>
-      <code>flex-shrink: 1;</code>
+      <code class="code">flex-shrink: 1;</code>
       <p>Numerical values accepted along with glogal values including: <i>inherit; initial;</i> and <i>unset; (initial
           value = 0).</i></p>
     </section>
-
-    <!-- FLEX BASIS SECTION -->
-
+    <!-- Flex basis secton -->
     <section class="main-section" id="flex_basis">
       <header class="section-header" id="flex_basis_header">Flex Basis</header>
       <p>Specifies the flex basis which is the initial main size of a flex item. Determines the size o the content-box
         unless specified otherwise using box-sizing.</p>
-      <code>flex-basis: auto;</code>
+      <code class="code">flex-basis: auto;</code>
       <p>Widths can be specified in numerical values using <i>em</i> and <i>px, (initial value = auto).</i></p>
     </section>
-
-    <!-- FLEX SECTION -->
-
+    <!-- Flex section -->
     <section class="main-section" id="flex">
       <header class="section-header" id="flex_header">Flex</header>
       <p>Shorthand property specifying the ability of a flex item to alter its dimensions to fill available space.</p>
-      <code>flex:​ 0 1 auto;</code>
+      <code class="code">flex:​ 0 1 auto;</code>
       <p>The above example is shorthand for the following, <i>flex-grow: 0; flex-shrink: 1; flex-basis: auto;</i></p>
     </section>
-
-    <!-- ALIGN SELF SECTION -->
-
+    <!-- Align self section -->
     <section class="main-section" id="align_self">
       <header class="section-header" id="align_self_header">Align Self</header>
       <p>Defines how the browser distributes space between and around flex items along the cross-axis of their
         container.</p>
-      <code>align-self: flex-start;</code>
+      <code class="code">align-self: flex-start;</code>
       <p>Align to cross-start.</p>
-      <code>align-self: flex-end;</code>
+      <code class="code">align-self: flex-end;</code>
       <p>Align to cross-end.</p>
-      <code>align-self: center;</code>
+      <code class="code">align-self: center;</code>
       <p>Center items in the cross-axis.</p>
-      <code>align-self: baseline;</code>
+      <code class="code">align-self: baseline;</code>
       <p>Align items to baselines.</p>
-      <code>align-self: stretch;</code>
+      <code class="code">align-self: stretch;</code>
       <p>Stretch items to fit.</p>
     </section>
   </main>
