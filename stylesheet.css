@@ -1,44 +1,44 @@
-/* GOOGLE FONT IMPORT */
+/* Google font Import */
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display&Anonymous+Pro=swap");
 
-/* BASE VARIABLES */
+/* Base styling */
 
 * {
-  font-family: Open Sans, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: #f1f1f1;
 }
 
-html,
-body {
+.html,
+.body {
   width: 100%;
   height: 100%;
   margin: 0;
   scroll-behavior: smooth;
 }
 
-/* MOBILE SPECIFIC NAVBAR VARIABLES */
+/* Small screen specific navbar styling */
 
 label {
   margin: 0 2.5rem 0 0;
   display: none;
 }
 
-#toggle {
+.toggle {
   display: none;
 }
 
-/* NAVBAR VARIABLES */
+/* Navbar Styling */
 
-#navbar {
+.navbar {
   position: fixed;
   display: inline-block;
   width: 10.9375rem;
 }
 
-#nav_bar_header {
+.nav-bar-header {
   font-size: 1.5rem;
-  font-family: Playfair Display, sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   border: 0.0625rem solid #484848;
   margin-left: 0.2rem;
   color: #f1f1f1;
@@ -52,38 +52,35 @@ label {
 
 .menu>a {
   display: block;
-  font-family: Playfair Display, sans-serif;
+  width: 10.5rem;
+  font-family: 'Playfair Display', sans-serif;
   font-size: 1rem;
   text-decoration: none;
-  /* Removes underline */
   color: #f1f1f1;
   background-color: #484848;
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
-  padding-left: 0.3rem;
-  padding-right: 0.3rem;
-  border-radius: 0.1875rem;
+  padding: 0.1rem 0.3rem;
   margin-left: 0.2rem;
   margin-top: 0.3rem;
-  width: 10.5rem;
+  border-radius: 0.1875rem;
   box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2),
     0 0.375rem 1.25rem 0 rgba(0, 0, 0, 0.19);
 }
 
-a:hover {
+.menu>a:hover {
   box-shadow: inset 0 0 0.625rem #ce9248;
   padding-right: 1rem;
   transition: 0.6s;
 }
 
-/* BASE SECTION VARIABLES */
+/* Base section styling */
 
-section {
+.main-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #484848;
   background-color: #f1f1f1;
+  padding: 3rem 5rem;
   margin-top: 0.9rem;
   margin-left: 12.5rem;
   margin-right: 20vw;
@@ -91,19 +88,15 @@ section {
   border-radius: 0.125rem;
   box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2),
     0 0.375rem 1.25rem 0 rgba(0, 0, 0, 0.19);
-  padding-bottom: 3rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-top: 3rem;
 }
 
 .section-header {
   font-size: 3.2rem;
-  font-family: Display display, sans-serif;
+  font-family: 'Display display', sans-serif;
   padding-bottom: 2rem;
 }
 
-code {
+.code {
   background-color: #484848;
   border-radius: 0.125rem;
   box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2),
@@ -111,15 +104,15 @@ code {
   color: #f1f1f1;
   width: 15rem;
   padding: 2rem;
-  font-family: Anonymous Pro, sans-serif;
+  font-family: 'Anonymous Pro', sans-serif;
   font-size: 1.1rem;
   margin-top: 3rem;
 }
 
-/* MEDIA QUERIES  1000/600/400 */
+/* Media Queries  1000/600/400 */
 
 @media (max-width: 1000px) {
-  section {
+  .main-section {
     margin-right: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -138,15 +131,14 @@ code {
     font-size: 0.8rem;
     color: #f1f1f1;
     background-color: #484848;
-    padding-top: 0.26rem;
-    padding-bottom: 0.26rem;
+    padding: 0.26rem 0.26rem;
     width: 100%;
     border-radius: 0rem;
     margin-left: 0rem;
     margin-top: 0rem;
   }
 
-  #toggle:checked+.menu {
+  .toggle:checked+.menu {
     display: block;
   }
 
@@ -169,13 +161,13 @@ code {
     color: #006400;
   }
 
-  #navbar {
+  .navbar {
     position: fixed;
     display: block;
     width: 100%;
   }
 
-  #nav_bar_header {
+  .nav-bar-header {
     width: 100%;
     text-align: center;
     padding-bottom: 0rem;
@@ -185,11 +177,9 @@ code {
     margin: 0rem;
   }
 
-  section {
-    margin-top: 0rem;
-    margin-bottom: 1rem;
-    margin-left: 0.1rem;
-    margin-right: 0.1rem;
+  .main-section {
+
+    margin: 0rem 0.1rem 1rem;
     padding-top: 3.8rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -199,23 +189,21 @@ code {
     font-size: 2.6rem;
   }
 
-  #introduction {
+  .introduction {
     padding-top: 8.5rem;
-    /* ADJUSTMENT FOR MOBILE MENU */
   }
 }
 
 @media (max-width: 400px) {
-  #nav_bar_header {
+  .nav-bar-header {
     font-size: 1rem;
   }
 
   label {
     font-size: 1.3rem;
-    /* sets hamburger menu size */
   }
 
-  code {
+  .code {
     width: 78%;
     margin: 0.1rem;
   }
@@ -225,7 +213,7 @@ code {
     padding-bottom: 2rem;
   }
 
-  section {
+  .main-section {
     padding-top: 4rem;
     padding-left: 0.1rem;
     padding-right: 0.1rem;
